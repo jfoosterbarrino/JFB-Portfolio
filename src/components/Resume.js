@@ -55,7 +55,7 @@ export default function FullScreenDialog() {
           </Toolbar>
         </AppBar>
         <Typography sx={{display:"flex", justifyContent:"center", backgroundColor:"#0b0c10", backgroundSize: "cover", height:"200vh", pt:2, pb:2}}>
-        <img style={{width:"25%", height:"100vh"}} src= "https://res.cloudinary.com/dccf9vnoo/image/upload/v1658224631/resume_photo_cnbvg0.jpg"/>
+        <img style={{maxWidth:"50%"}} src= "https://res.cloudinary.com/dccf9vnoo/image/upload/v1658224631/resume_photo_cnbvg0.jpg"/>
         </Typography>
       </Dialog>
     </div>

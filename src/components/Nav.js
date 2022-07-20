@@ -63,9 +63,9 @@ export default function PermanentDrawerLeft({children}) {
         <a href = "#sec1" style={{color:"#c5c6c7", textDecoration: "none"}}><img style={{width: "7em", marginBottom:5}} src = "https://res.cloudinary.com/dccf9vnoo/image/upload/v1657821855/wbblue_cn1z21.png"/></a>
         <p>Software Engineer</p>
         </Typography>
-        <List sx={{display: "flex", justifyContent: "center", flexDirection: "column", height: "70%"}}>
+        <List sx={{display: "flex", justifyContent: "center",ml:2 ,flexDirection: "column", height: "70%"}}>
 
-        <ListItem className="list" sx={{textAlign: "center", display: "flex",justifyContent: "center"}} disablePadding>
+        <ListItem className="list" sx={{textAlign: "center", display: "flex",justifyContent: "left"}} disablePadding>
             <a href = "#sec1" style={{color:"#c5c6c7", textDecoration: "none"}}>
             <ListItemButton>
                 {/* <ListItemIcon> */}
@@ -76,7 +76,7 @@ export default function PermanentDrawerLeft({children}) {
             </a>
             </ListItem>
 
-            <ListItem className="list" sx={{textAlign: "center", display: "flex",justifyContent: "center"}} disablePadding>
+            <ListItem className="list" sx={{textAlign: "center", display: "flex",justifyContent: "left"}} disablePadding>
             <a href = "#sec2" style={{color:"#c5c6c7", textDecoration: "none"}}>
             <ListItemButton>
                 {/* <ListItemIcon> */}
@@ -91,7 +91,7 @@ export default function PermanentDrawerLeft({children}) {
 
 
           
-            <ListItem className="list" sx={{textAlign: "center", display: "flex",justifyContent: "center"}} disablePadding>
+            <ListItem className="list" sx={{textAlign: "center", display: "flex",justifyContent: "left"}} disablePadding>
             <a href = "#sec3" style={{color:"#c5c6c7", textDecoration: "none"}}>
             <ListItemButton>
                 {/* <ListItemIcon> */}
@@ -103,7 +103,7 @@ export default function PermanentDrawerLeft({children}) {
             </ListItem>
 
           
-            <ListItem className="list" sx={{textAlign: "center", display: "flex",justifyContent: "center"}} disablePadding>
+            <ListItem className="list" sx={{textAlign: "center", display: "flex",justifyContent: "left"}} disablePadding>
             <a href = "#sec4" style={{color:"#c5c6c7", textDecoration: "none"}}>
             <ListItemButton>
                 {/* <ListItemIcon> */}
@@ -115,7 +115,7 @@ export default function PermanentDrawerLeft({children}) {
             </ListItem>
          
  
-            <ListItem className="list" sx={{textAlign: "center", display: "flex",justifyContent: "center"}} disablePadding>
+            <ListItem className="list" sx={{textAlign: "center", display: "flex",justifyContent: "left"}} disablePadding>
             <a href = "#sec5" style={{color:"#c5c6c7", textDecoration: "none"}}>
             <ListItemButton>
                 {/* <ListItemIcon > */}

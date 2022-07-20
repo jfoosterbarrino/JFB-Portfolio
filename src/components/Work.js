@@ -16,24 +16,32 @@ export default function Work() {
 
     const {projects, flick, trash2Treasure, judgeByTheCover, pokemonVillage, weatherTheStorm} = useContext(ProjectContext)
     const [app, setApp] = useState({})
+    const [projId, setProjId] = useState()
+    const [video, setVideo] = useState()
 
-    const handleClick=(project)=>{
-        if(app.video){
-            setApp({})
-        }else{
-            for(let app of projects){
-                if(app.id == project.id){
-                    setApp(app)
-                    console.log(app.video)
-            }
-        }
-        }
+    // const handleClick=(project)=>{
+    //     if(app.video){
+    //         setApp({})
+    //     }else{
+    //         for(let app of projects){
+    //             if(app.id == project.id){
+    //                 setApp(app)
+    //                 console.log(app.video)
+    //         }
+    //     }
+    //     }
 
-    }
+    // }
 
     useEffect(()=>{
-
-    },[])
+        for(let app of projects){
+            if(app.id == projId){
+                setApp(app)
+                setVideo(app.video)
+                console.log(app.video)
+        }
+    }
+    },[projId])
 
   return (
     <>
@@ -46,7 +54,7 @@ export default function Work() {
 
             <Box style={{display:"flex", flexDirection:"row", paddingBottom:30, justifyContent:"space-around"}}>
             {projects.map(project =>(
-              <img key ={project.id} className="project-card" onClick={()=>handleClick(project)} src={project.photo}/>
+              <img key ={project.id} className="project-card" onClick={()=>setProjId(project.id)} src={project.photo}/>
                 // {/* <Card variant="outlined" sx={{ background:`url(${project.photo}) no-repeat center`, backgroundSize:"contain", backgroundRepeat: "no-repeat", width:"85%", height:"22vh"}}> */}
         
                             // {/* <CardContent className="project-content"sx={{textAlign:"center", height:"100%"}}> */}
@@ -77,9 +85,11 @@ export default function Work() {
 
             <Grid item xs={8} md={8}>
                 <Typography sx={{display: 'flex', justifyContent: 'center', mt:5}}>
-                    <video autoPlay loop muted style={{width:"80%", cursor: 'pointer'}}>
-                        <source src={app.video} type="video/mp4"/>
-                    </video>
+                    <img style={{width:"80%", cursor: 'pointer'}} src={app.photo}/>
+                    
+                    {/* <video autoPlay loop muted style={{width:"80%", cursor: 'pointer'}}>
+                        <source src={video} type="video/mp4"/>
+                    </video> */}
                 </Typography>
             </Grid>
 

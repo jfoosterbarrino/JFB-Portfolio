@@ -6,10 +6,10 @@ import '../css/aboutme.css'
 
 export default function AboutMe() {
   return (
-    <Box sx={{ flexGrow: 1}}>
+    <Box sx={{ flexGrow: 1, pl:5, pr:5}}>
       <Grid container spacing={20}>
 
-        <Grid item xs={3} md={3} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center'}}>
+        <Grid item xs={12} sm={12} md={3} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center', minHeight:"500px"}}>
             <div className="container">
                 <div>HTML</div>
                 <div>CSS</div>
@@ -27,7 +27,7 @@ export default function AboutMe() {
 
         
 
-        <Grid item xs={6} md={6} sx={{ display:"flex",flexDirection: 'column',justifyContent: "space-around", alignContent: "center"}}>
+        <Grid item xs={12} sm={12} md={6} sx={{ display:"flex",flexDirection: 'column',justifyContent: "space-around", alignContent: "center"}}>
         <h1 className= "typing" style={{fontFamily: "Space Mono, monospace", color:"#45a29e"}}>Me, Myself &amp; I</h1>
         <Typography sx={{p:5, mt:2,backgroundColor:"#333", fontFamily: "Space Grotesk, sans-serif"}}>
             
@@ -42,7 +42,7 @@ export default function AboutMe() {
     
         </Grid>
 
-        <Grid item xs={3} md={3} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around'}}>
+        <Grid item xs={12} sm={12} md={3} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', minHeight:"500px"}}>
         
             <div className="container">
                 <div>React</div>

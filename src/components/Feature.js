@@ -11,7 +11,7 @@ export default function Feature() {
 
 
   return (<>
-            <Typography color="#45a29e" sx={{ml:10}}>
+            <Typography color="#45a29e" sx={{ml:10,mb:5}}>
             <h1 className="typing">
                 Featured Project
             </h1>

@@ -44,21 +44,20 @@ export default function Work() {
             </h1>
         </Typography>
 
-            <Box style={{display:"flex", flexDirection:"row", paddingBottom:30, justifyContent:"center"}}>
+            <Box style={{display:"flex", flexDirection:"row", paddingBottom:30, justifyContent:"space-around"}}>
             {projects.map(project =>(
-              <Box key ={project.id} className="project-card" onClick={()=>handleClick(project)}>
-                <Card variant="outlined" sx={{ background:`url(${project.photo}) no-repeat center`, backgroundSize:"contain", backgroundRepeat: "no-repeat"}}>
-
+              <img key ={project.id} className="project-card" onClick={()=>handleClick(project)} src={project.photo}/>
+                // {/* <Card variant="outlined" sx={{ background:`url(${project.photo}) no-repeat center`, backgroundSize:"contain", backgroundRepeat: "no-repeat", width:"85%", height:"22vh"}}> */}
         
-                            <CardContent className="project-content"sx={{textAlign:"center", height:"22vh"}}>
+                            // {/* <CardContent className="project-content"sx={{textAlign:"center", height:"100%"}}> */}
 
-                            {/* <Typography variant="h5" component="div" color="white" width="100%" backgroundColor="rgba(0,0,0,.5)" pt="5px" pb="5px" borderRadius="30px">
-                                {project.title}
-                            </Typography> */}
-                            </CardContent>
+                            // {/* <Typography variant="h5" component="div" color="white" width="100%" backgroundColor="rgba(0,0,0,.5)" pt="5px" pb="5px" borderRadius="30px">
+                            //     {project.title}
+                            // </Typography> */}
+                            // {/* </CardContent> */}
 
-                </Card>
-              </Box>
+                // {/* </Card> */}
+            //   {/* </Box> */}
             ))}
             </Box>
             

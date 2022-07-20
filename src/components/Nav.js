@@ -28,7 +28,7 @@ import Resume from './Resume';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 
-const drawerWidth = 200;
+const drawerWidth = 180;
 
 export default function PermanentDrawerLeft({children}) {
   const {jalen} = useContext(JalenContext)

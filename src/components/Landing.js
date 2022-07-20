@@ -30,7 +30,7 @@ export default function Landing() {
 
     <Box sx={{ flexGrow: 1}}>
       <Grid container spacing={2}>
-        <Grid item xs={6} md={6}>
+        <Grid item xs={12} sm={12} md={6}>
          
 
             <div className="wrapper">
@@ -56,7 +56,7 @@ export default function Landing() {
 
       
         </Grid>
-        <Grid item xs={6} md={6}>
+        <Grid item xs={12} sm={12} md={6}>
 
 
             <section className="section">
@@ -71,7 +71,7 @@ export default function Landing() {
           
 
         </Grid>
-        <Grid item xs={4} md={4} sx={{display: 'flex', justifyContent: 'center'}}>
+        <Grid item xs={12} sm={12} md={4} sx={{display: 'flex', justifyContent: 'center'}}>
 
             <div className= "note">
                 <div className="face face1">
@@ -92,7 +92,7 @@ export default function Landing() {
 
 
         </Grid>
-        <Grid item xs={4} md={4} sx={{display: 'flex', justifyContent: 'center'}}>
+        <Grid item xs={12} sm={12} md={4} sx={{display: 'flex', justifyContent: 'center'}}>
 
 
         <div className= "note">
@@ -113,7 +113,7 @@ export default function Landing() {
             </div>
 
         </Grid>
-        <Grid item xs={4} md={4} sx={{display: 'flex', justifyContent: 'center'}}>
+        <Grid item xs={12} sm={12} md={4} sx={{display: 'flex', justifyContent: 'center'}}>
 
         <div className= "note">
                 <div className="face face1">

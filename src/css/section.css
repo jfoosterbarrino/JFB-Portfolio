@@ -1,0 +1,13 @@
+.section-it{
+    /* color: #FFF; */
+    background-color: #333;
+    height: 20vh;
+    /* border-radius: 40px; */
+    /* background-image: radial-gradient(circle at 38px 100px, rgba(0,0,0,0), rgba(0,0,0,0) 100px, #333 100px); */
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+.boxes{
+    zoom: 80%;
+}

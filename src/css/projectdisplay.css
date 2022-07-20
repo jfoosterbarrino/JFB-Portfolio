@@ -1,0 +1,24 @@
+.project-card{
+    margin-left: -5em;
+    transition: all .8s ease-in;
+    border-radius: 5px;
+    margin-top:100px;
+    width: 20%;
+    height: 100%;
+    
+}
+
+.project-card:hover{
+    margin-left: -1em;
+    transform: translateY(-60px) translateX(-60px);
+    z-index:1;
+    cursor: pointer;
+}
+
+.project-content{
+    background-color: rgba(0,0,0,.5)
+}
+
+.project-content:hover{
+    background-color: rgba(0,0,0,0)
+}

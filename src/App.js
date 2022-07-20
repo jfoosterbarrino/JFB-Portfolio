@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import {useContext} from 'react';
+import {JalenContext} from './context/JalenContext';
+import {ProjectContext} from './context/ProjectContext';
+import Landing from './components/Landing';
+import Nav from './components/Nav';
+import Work from './components/Work';
+import Main from './views/Main';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const {jalen} = useContext(JalenContext)
+  const {projects} = useContext(ProjectContext)
+  console.log(jalen)
+  console.log(projects)
+
+  return (<div className="App">
+  <Nav>
+  <Main/>
+  </Nav>
+
+  {/* <h1>{jalen.firstName} {jalen.lastName}</h1>
+  <br/>
+  {projects?.map((project) =>(
+    <h1 key ={project.id}>{project.title}</h1>
+  ))} */}
+  </div>);
 }
 
 export default App;

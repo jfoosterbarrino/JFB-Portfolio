@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import JalenContextProvider from './context/JalenContext';
+import ProjectContextProvider from './context/ProjectContext';
+import primaryTheme from './themes/primaryTheme';
+import { ThemeProvider } from 'styled-components';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <ThemeProvider theme={primaryTheme}>
+    <ProjectContextProvider>
+    <JalenContextProvider>
     <App />
+    </JalenContextProvider>
+    </ProjectContextProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
